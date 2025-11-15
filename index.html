@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor Contrarreloj v4</title>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.sound.js"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    
+    <div id="ui-container">
+        <p id="ui-text">Preparando...</p>
+    </div>
+
+    <div id="stats-container">
+        <div id="ui-score">Puntaje: 0</div>
+        <div id="ui-timer">Tiempo: 60.0s</div>
+    </div>
+
+    <div id="instructions-splash">
+        <h3>CONTROLES</h3>
+        <p><strong>[W][A][S][D]</strong> = Moverse</p>
+        <p><strong>[E]</strong> = Recoger / Entregar</p>
+        <p><strong>[R]</strong> = Reiniciar Juego</p>
+    </div>
+    
+    <div id="gameover-container" style="display: none;">
+        <h1 id="gameover-title">¡TIEMPO AGOTADO!</h1>
+        <p>Tu puntaje final es: <span id="final-score">0</span></p>
+        <p>Presiona [R] para reintentar</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
